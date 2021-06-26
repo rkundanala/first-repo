@@ -1,0 +1,1857 @@
+﻿index=policycore_pd cloudServiceName="*macpms-pd1*" "policynumber"
+GEICO_SP_BIL_GetAccountSummaryAsXML - Avg duration is mre than 100 sec 
+kindly update on below trail mail
+all Please check updated Inc Template and start using it with immediate effect. 
+You can go though the email SUB: "Updated IN Template - June 2021"
+We included below fields in the description. 
+•	List of Impacted end points: 
+•	List of Impacted Cloud Service/App-Insight/AKS Resource: 
+
+Please refer to below email and kindly give us an update for this
+Run ipconfig /flushdns and netsh winsock reset in cmd admin mode
+GEICO IT Support Virtual Machine Migration to cloud
+VM Azure Migration <donotreply@geico.com>
+Hello Team,
+IRT has initiated NOC Call for "ASD-Edge-PD1-[Sev1-Critical]-GEICO ESB Stats-V2.2"
+Application: Edge
+Env: PD1
+Issue Description: GEICO ESB Stats
+https://geico.webex.com/meet/NOCIRT6
+
+
+Username: manikantanaidu.lenka@gmail.com
+Munna@8886
+
+
+
+
+BCIDCA - nodes 02 - 08
+BCIDCW - nodes 02 - 04
+PCIDCA - nodes 02 - 08
+PCIDCW - nodes 02 - 04
+
+
+
+Terrance updated that it should go through IRT
+1.) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+from Rahul Lakkireddy to everyone:    12:45 PM
+amqps://host=rabbitmq-metrics-PD1.lb.geicoddc.net:5671;publisherconfirms=false;VirtualHost=BusinessEvents.ASD.Vhost;username=BusinessEvents.ASD.Publisher
+from Rahul Lakkireddy to everyone:    12:45 PM
+rabbitmq-metrics-PD1.lb.geicoddc.net
+from Maria Milagro Brandt Cevallos to everyone:    12:46 PM
+10.251.216.163
+
+
+12:47 PM Rahul updated that remote host not accepting any connections.
+12:48 PM Rahul informed if there were any changes made from network side.
+12:49 PM Maria requested to share the errors.
+12:50 PM Rahul infomred that we are seeing exceptions to that endpoint.
+12:51 PM Rahul also shared the source range "GZE-PD-ISOSTR_10.20.104.0_22   ".
+12:52 PM Maria will be checking from network perspective side and will update further.
+1:03 PM Rahul asked did we verify the rabbitmq-metrics-PD1.lb.geicoddc.net.
+1:06 PM Rahul informed this endpoint is failing from 11:38 PM.
+1:15 PM Rahul requested mayur to why only this endpoint is failing rabbitmq-metrics-PD1.lb.geicoddc.net
+1:16 PM Mayur updated that 11 to 12 PM , after 11:30 PM the publishings are dropped.
+1:17 PM and there is no backlog at this time. Any specific server on specific subset.
+1:18 PM Rahul inforemd that 41 events were effected in last 15 minutes.
+1:19 PM Mayur infomred that messages are processing it.
+1:19 PM Rahul updated during peak horus more load and mayur updated its 600 msg per sec.
+1:20 PM Mayur suggested to perform restart .
+1:20 PM Rabbit endpoint things are looking good. 
+
+1:21 PM Rahul is performing restart on few instances to verify if there will any improvement.
+1:31 PM rahul also updated that working fine for some time and someother time they were we are observing exceptions.
+1:32 PM Rahul informed that issue is within the application itself.
+1:36 PM Rahul updated to keep this line open for sometime, that runbook needs to updated.
+1:42 PM Exceptions or No action item needed from IRT.
+
+Rahul updated that Rabbit MQ messges are publishing properly but there were intermittent exceptions. Rahul will be updating the runbook for this alert unitl then there is no action from IRT. Even from Network end, there were no issues.
+
+
+root cause - higer volume traffic  
+
+Rahul updated that remote host not accepting any connections and shared the source range "GZE-PD-ISOSTR_10.20.104.0_22" the network team to verify.Maria will be checking from network perspective side and will update further. 
+Rahul verified with Mayur about this endpoint which is failing "rabbitmq-metrics-PD1.lb.geicoddc.net" on Edge side. Mayur updated that Rabbit endpoint looks good and it's publishing with 600 msg per sec. Mayur suggested to perform restart on the effect instances to see if there will be any relief post restart. Rahul is currently performing the restart. 
+
+
+# 1210138 - ASD-PEAK-NonProd-[Critical]-PPAPI SQL Exception-V3-CTLT2 PPAPIS - 1 host(s) reporting ["policyproductapi - LT2 - Web_IN_5_Web:443,30000","gzepoladclt2x-ilb on port 443","policyproductapi - LT2
+
+ 
+
+Geico@010
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+IRT verified in azure portal and confirmed there were no ongoing maintenance activities like Deployments, Patching and planned Outages.
+there was a dropin troughput at 4:00 PM and it came back to normal.
+Splunk indestion has delayed a
+Andrea updated there was 05min delay right now
+andre informed that there was no delay on billing and policy in last 15 minutes.
+
+Vinh informed that indexers looks healthy. 
+
+Vinh informed that we are seeing issues and the data is blocked and it's not going out at all.
+around at 4:00 PM the traffic got blocked and it's competely dead.
+
+frup7352.geicoddc.net
+frup7353.geicoddc.net
+frup7354.geicoddc.net
+frup7355.geicoddc.net
+frup7356.geicoddc.net
+frup8126.geicoddc.net 
+frup8127.geicoddc.net 
+frup8128.geicoddc.net 
+frup8129.geicoddc.net 
+frup8130.geicoddc.net 
+frup8562.geicoddc.net
+frup8563.geicoddc.net     
+frup8564.geicoddc.net
+frup8565.geicoddc.net
+frup8566.geicoddc.net    
+frup8567.geicoddc.net
+frup8568.geicoddc.net
+frup8569.geicoddc.net
+frup8570.geicoddc.net
+frup8571.geicoddc.net
+ 
+
+port no 9997
+
+Vinh also updated that we do see some deny requests whic are related to network.
+Sorce IP have issue going out through port 9997 and the destination IP 96 ip's.
+We can't hit any of the destination port, 
+
+Endpoints: inputs1.geico.splunkcloud.com:9997, inputs2.geico.splunkcloud.com:9997, inputs3.geico.splunkcloud.com:9997, inputs4.geico.splunkcloud.com:9997, inputs5.geico.splunkcloud.com:9997, inputs6.geico.splunkcloud.com:9997, inputs7.geico.splunkcloud.com:9997, inputs8.geico.splunkcloud.com:9997, inputs9.geico.splunkcloud.com:9997, inputs10.geico.splunkcloud.com:9997, inputs11.geico.splunkcloud.com:9997, inputs12.geico.splunkcloud.com:9997, inputs13.geico.splunkcloud.com:9997, inputs14.geico.splunkcloud.com:9997, inputs15.geico.splunkcloud.com:9997
+
+Ram is verifying if this endpoints are going through proxy.
+Ram is verifying about the port 8089
+Port 8089 is used for azure Deployment servers , it's between the geico servers.
+it's Non-prod also impacted. 
+index=network_PD and they observe that traffic is effected.
+Performance wise indexers and searches looks okay.
+Traffic delay is happening into splunk.
+Carlos updated that we are seeing connection drops in dynatrace.
+Vinh informed that false alerts due to data ingestion delay.
+Ram verified the proxies and observed no issues.
+if's that are serving the azure env.
+
+
+8:13 PM Ram verified the firewalls and observed the traffic.
+8:14 PM Andrea informed to verify the network between the GEICODDC servers.
+8:15 PM Lokesh requested to share the IP for GEICODDC server's.
+8:16 PM Andrea informed that traffic gets impacted when there is a proxy issue.
+8:17 PM Ram inforemd that we did a failover for fraappproxytest.geico.net and gpappproxy.geico.net from 10.248.113.47 to 10.240.113.37.
+8:18 PM Carlos requested to perform failback.
+8:19 PM Ram requested to loop NOC team on this call.
+8:22 PM James joined the call.
+8:26 PM Carlos informed that there was a failover at 4:00 PM because of that we are seeing splunk issues.
+8:28 PM James has performed failback for gpappproxytest.geico.net and frappproxytest.geico.net from the Plaza VIP 10.240.113.37 to the Fredericksburg VIP 10.248.113.47.
+and it will reflect in 05 minutes.
+8:31 PM Ram updated that port 9997 traffic was not going through any proxy.
+8:33 PM Carlos updated that we are seeing splunk issue when this proxy change happens.
+8:35 PM Carlos also updated that we are seeing this impact only on DDC servers.
+8:37 PM Sathya informed that for plaza proxy we have new NAT ip's and those ip's are not acccomodated by vendor.
+8:38 PM Ram updated that some of them we are using WEB instead of proxy.
+8:41 PM Carlos updated that after the failback we are seeing improvements.
+8:44 PM Sathya informed there were hardware issues with that device.
+
+At 8:30 PM the NOC executed a proxy change to direct traffic for gpappproxytest.geico.net and frappproxytest.geico.net from the Plaza VIP 10.240.113.37 to the Fredericksburg VIP 10.248.113.47.
+
+8:47 PM Carlos suggested to verify the ifu configuration to resolve this proxy issue.
+8:49 PM Sathya informed there shouldn't be any firewalls between DDC and proxy servers.
+8:50 PM Ram did the global serach for network index for plaza to verify if there are any blockings.
+8:53 PM Ram updated that we did failback only for testproxy
+9:02 PM Sathya requested Splunk team to share the source ip's to verify the routing.
+9:04 PM Vinh updated that 10.251.105.197 ip's are prod servers.
+9:07 PM Sathya informed that all this source ip's comes under the same subnet.
+9:11 PM Ram requested to run the traceroute command on the server "frun7339.geicoddc.net   10.251.104.22".
+9:12 PM Tyler ran the traceroute command  with these ip's 10.240.113.37 and 10.248.113.47
+9:21 PM Sathya updated that we will failover back to plaza after fixing the issue.
+9:27 PM Ram informed that we will sync at tomorrow morning 8 AM for the root cause.
+9:28 PM Sathya informed that failover happenend at 4 PM beacuse of bad proxy, as the splunk issue exsits we did failback at 8:30 PM later the issue was resolved.
+9:30 PM Carlos and Ram requested to send a meetin invitation at 8 AM tomorrow for the root cause.
+9:31 PM Teams decided to close the call, NOC call closed.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6:01 PM IRT received moogsoft situation "CLEAR-Policy-PD1-[Sev1-Critical]-Http 500 Error-V2.1-CP016 ".
+6:03 PM IRT acknowledged the alert.
+6:08 PM IRT verified the splunk and application insights and observed 500 errors on this two URL "GET /duckcreek/api/v1/attachments/78 & "GET /Express/api/v1/attachments/78".
+6:10 PM IRT initiated the NOC call.
+6:11 PM IRT paged teams on the call.
+6:13 PM Merci joined the call.
+6:14 PM IRT explained the issue.
+6:14 PM Merci requeseted IRT to share the Normalized URL and IRT has sahred the URL "GET /duckcreek/api/v1/attachments/78"
+6:15 PM Merci also requsted IRT to share the runbook link and resource group for this alert.
+6:16 PM Raj joined the call.
+6:17 PM IRT explained that we are seeing failures on /duckcreek/api/v1/attachments/78.
+6:18 PM Dustin informed that "GET /Express/api/v1/attachments/78" is related to proxy server traffic which is coming back to 500 error.
+6:19 PM IRT updated the events were coming from all hosts.
+6:22 PM Raj requsted to page Clear prod support L3.
+6:24 PM IRT paged the team.
+6:24 PM Merci requsted IRT to verify the threshold and time for this alert.
+6:25 PM IRT updated that alert will trigger for 15 events in last 15 minutes.
+6:29 PM Raj requsted IRT to send out an email to CLEAR PROD Support L3 for the root cause.
+6:30 PM Raj also updated to page CLEAR PROD SUpport L3 until tommorw morning, if we receive 500 alert again on this end points "GET /duckcreek/api/v1/attachments/78 and "/Express/api/v1/attachments/78" "
+6:34 PM As the events were subsided, Teams decided to close the call.
+6:35 PM NOC call closed.
+
+Root Cause - Yet to determined. 
+
+
+
+
+
+
+
+
+
+
+
+2:25 PM IRT initiated NOC call for "ASD-EdgeCounselor-PD1-[Sev0-Critical]-EDGECO-API-CPU Utilization Greater Than 85%-V2.1"
+2:27 PM Abdi shared the instance_10 to verify if it's healthy.
+2:29 PM IRT updated that instance is healthy and added back to ILB.
+2:30 PM IRT updated that memory and CPU health looks good.
+2:33 PM Gautam joined the call.
+2:34 PM IRT informed that we received memory alerts on 06 and 14.
+2:35 PM Abdi informed that Raas removes the instnace for cloud service, will perform IIS and added back to ILB.
+2:36 PM IRT updated that for the last 30 minutes, we observed CPU on multiple instances.
+2:37 PM Gautam informed that after the tomorrow deployments it will be fixed.
+2:38 PM Gautam also updated to restart the instances for more than 15 minutes.
+2:39 PM Gautam informed that right now we were looking good.
+2:40 PM Abdi informed that Raas will taken care like IIS reset, and removing ILB and added back to ILB.
+
+
+root cause : It was due to VM size that was causing high CPU and memory size, Archeitechure and performance is working to fix this issue.
+
+
+
+
+•	1:58 PM IRT received Moogsoft situation for "ASD-EdgeCounselor-PD1-[Sev0-Critical]-EDGECO-API-CPU Utilization Greater Than 85%-V2.1".
+•	2:07 PM IRT verified the CPU utilization for the following instances in azure portal and observed that instances “EDGAPI_IN_35, EDGAPI_IN_31 and EDGAPI_IN_24” were within the threshold in last 15 minutes.
+•	2:08 PM IRT observed that Recovery Automation(RaaS) got triggered for “EDGAPI_IN_10” as the CPU Utilization > 95%  for the last 05 minutes.
+•	2:20 PM IRT recieved multiple OOPS alerts on Edge Counselor, portfolio and Launchpad.
+.
+•	2:22 PM IRT initiated NOC call.
+• 	2:22 PM NOC team updated that there were recieving repors from agents that there were OOPS errors on launchpad.
+•	2:24 PM Abdi joined the call.
+•	2:27 PM Abdi requested IRT the verify the instance_10 for EdgeCO PD1.
+•	2:29 PM IRT verified and updated that instance looks healthy and it’s added back to ILB.
+•	2:30 PM IRT also updated that CPU is within the threshold now.
+•	2:33 PM Gautam from ASD Policy and Edge DevOps team joined the call.
+•	2:34 PM IRT informed that we received alerts for memory utilization greater than 80 % on instance_06 and 14.
+•	2:35 PM Abdi informed that RAAS will perform IIS reset for instance’s which are  greater than 95% for the last 05 minutes later it will add back to ILB.
+•	2:36 PM IRT informed that we received CPU alerts on multiple instances.
+•	2:37 PM Gautam updated that issue will be fix post deploymentment on PROD for both EdgeCO and EdgeIN as part of 6/3 patch release.
+•	2:38 PM Gautam suggested IRT to restart the instances if the CPU utilization greater than threshold for 15 minutes.
+•	2:38 PM IRT updated that we received ended emails for OOPS alerts.
+•	2:39 PM As the Instances were within the threshold, Teams decided to close the call.
+•	2:40 PM NOC call closed.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+For Sev0 Alerts, the following teams will be immediately paged:
+        DevOps Clear (DevOps_CLEAR)
+        DevOps Commercial (DevOps_Commercial_L2)
+        SQL L1 and L2 (SQL_Server_Oncall, SQL_Server_PE_Team)
+
+
+
+
+PD1 CNCLTM - 1 host(s) reporting ASD-CanceledPolicyConversion-PD1-[Sev1-Critical]-Host Not Reporting Data In Splunk-V2.2-P006 
+sry just wanted to inform we are seeing these host not reporting data in splunk alerts and when we are verifying in splunk all the instances are taking traffic. Just wanted to bring it to your notice 
+
+
+5:31 PM IRT received the alert "ASD-BEAM-PD1-[Sev1-Critical]-DuckCreek Timeout Technical Exception-V2.1".
+5:33 PM IRT verified the events were continonus and initiated NOC call.
+5:38 PM IRT paged Billing DevOps on the call.
+5:38 PM Sandeep from Billing DevOps joined the call.
+5:39 PM IRT explaiend that we observed that events were continous for DuckCreek Timeouts in splunk.
+5:40 PM Sandeep requested to page MT-DuckCreek DevOps team.
+5:41 PM Poonam joined the call from MT DevOps.
+5:42 PM IRT has shared the splunk error logs and URl to verify.
+5:43 PM Sandeep requested to share the threshold for duckcreek timeouts.
+5:44 PM IRT informed that threshold for duckcreek timeouts is 60 for 15 minutes.
+5:45 PM Sandeep requested to share the alerts related to DuckCreek timeouts.
+5:46 PM IRT informed that failures were high in last 15 minutes which are related to paymentech.
+5:51 PM Poonam informed that we were observing invalid duckcreek response.
+5:55 PM Siva requested SQL team to verify if there are any long running queries.
+5:57 PM Ganesh from SQL team informed that update stats job was running from last one hour.
+5:58 PM Siva updated there was a spkie on SP "Geico_accountsummaryasXML" at 5:48 PM and requested SQL team to verify.
+6:04 PM Ganesh informed that no blcokings were observed during that time.
+6:05 PM Poonam informed that Duckcreek and Paymentech looks good.
+6:07 PM IRT observed that events were still triggering from 5:57 PM onwards.
+6:17 PM Siva udpated that technical execptions errors are 03 to 05 events for every minute.
+6:19 PM IRT verified for event for the last 24hrs in splunk and observed that events were continous from 6 AM onwards.
+6:23 PM Siva asked to perform restart or reset the duckcreek servers.
+6:34 PM Poonam infomred that integration exception happens because of payment failed due to invalid information from the duckcreek side.
+6:36 PM Poonam also updated that billing looks good.
+6:39 PM Poonam updated that these errors are coming from thrid party side.
+6:41 PM Siva notified to verify with Edge, as the exceptions are happening from caller app Edge.
+6:44 PM IRT informed that we were not observing any billing failures from Edge side.
+6:54 PM Siva updated that timeouts were within the threshold now and requested to page teams if the duckcreek timeouts were continonus.
+6:57 PM As the caller app is Edge, Siva requested to verify with Edge DevOps team.
+7:00 PM IRT paged Edge DevOps team on the call.
+7:02 PM Rahul joined the call.
+7:03 PM IRT explained the issue.
+7:03 PM Rahul updated that no billing exceptions were observed in last 30 minutes.
+7:05 PM IRT explained that even we didn't observed failures related to Billing.
+7:07 PM Siva updated that timeouts were within the threshold now and requested to page teams if the duckcreek timeouts were continonus.
+7:08 PM NOC call closed.
+
+ 
+2:53 PM IRT received the alert "ITSALES-SAPI-PD1-[Sev0-Critical]-ANBCQT-APP-Billing Dependency Failures-V1.0"
+2:54 PM IRT acknowledged the alert.
+2:54 PM Teams joined the call.
+2:54 PM Siva requested to share the endpoint "HTTP: POST bilbbs.pd.bilbbs.az.cloud.geico.net/billingbusinessservice/payment/takepayment/v1".
+2:56 PM William informed that 406 errors are excepted and no 500 errors at this time.
+2:57 PM IRT updated that eariler we were intitating seperate NOC line for 500 errors.
+2:57 PM William updated that there were changes made by santhosh.
+2:58 PM Siva verified with william can this 406 error be mitigated.
+2:59 PM William updated that i will follow-up with santhosh and also the alert query should be excluded for 406  errors.
+3:00 PM NOC call ended.
+
+
+
+
+6:24 PM William observed that there are 500 errors
+6:26 PM IRT updated that deployments were in progress.
+6:26 PM William updated that deployments were happening on SAPI side.
+6:29 PM IRT informed that 
+6:30 PM William updated that deployments were completed.
+6:31 PM William updated that 500 errors are due to deployments.
+
+
+
+
+
+
+
+
+
+
+1:38 PM IRT received the alert "ITSALES-SAPI-PD1-[Sev0-Critical]-ANBCQT-APP-Billing Dependency Failures-V1.0"
+1:39 PM IRT acknowledged the alert.
+1:42 PM Teams joined the call.
+1:44 PM Sandeep informed that there was deployment migration happened last time.
+1:45 PM IRT informed that anbcQT health event updated on the cloud service.
+1:46 PM Neb updated there were 500 errors from billing endpoint.
+1:46 PM Sandeep informed that timeouts and SQL acitve sessions were within the threshold.
+1:47 PM IRT updated that billing errors are on ANBA and timeouts were subsided.
+1:48 PM Rama Krishna updated the failures were reduced now.
+1:49 PM Siva informed that billing looks healthy and there were intermittent issues.
+1:49 PM William updated that spike were subided on ANBA side and might be due to slowdowns on billing side.
+1:50 PM IRT updated that billing spike were not continous on anbacr app insights.
+1:51 PM IRT also notified that failures were observed at 1:35 PM later there were subsided.
+1:53 PM Rama krishna informed IRT to monitor for 15 minutes.
+1:59 PM Rama kirhsna updated there were deployments happend at that time.
+2:00 PM William updated that deployments happend on SSPAPI.
+2:01 PM Teams decided to close the call.
+2:01 PM NOC call closed.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+OOPS 
+intiated NOC call for "billing timeouts"
+https://geico.webex.com/meet/NOCIRT6
+
+RE: eFix Request for 04/08/2021 for ADC DuckCreek application (Client CBO)
+
+RE: MAJOR INCIDENT - NOTIFICATION –PD1 -ARE-Edge Customer-OOPS Page-Error [Closed]
+
+Run ipconfig /flushdns and netsh winsock reset in cmd admin mode
+
+BCSW02DP_EAS_STATUS ENDED NOT OK
+---13/05 job was failed scalated to POC, 14/05 job was ended ok
+
+RE: Production BRPW01DP_GFR_FuturePayDecline Failed
+
+Veronica requested to removed from the schedule until July 1. 
+Kristin provided the approval to force complete the job today and stop running the job until July 1st. 
+IMPCR has Changed this job NOT to Execute until 7/1/21
+
+
+
+*control-M Update*
+RE: Approval needed: PayH recycle in production
+RE: Production BRPW01DP_GFR_FuturePayDecline Failed
+
+PrimE!@345
+RE: Thread Dumps for EDGE
+The team can open a NOC call if the whole cloud service averages around 85%. You can ignore if it occurs for a few instances at one time. 
+
+SERIOUS INCIDENT - POLICY - PD1 - CONNECTIVITY FAILURE FROM PPAPI TO DUCKCREEK – IRT INCIDENT TRACKING NUMBER - 20210513-03 [CLOSED]
+
+RE: Splunk Alert: ASD-PEAK-PD1-[Sev1-Critical]-Connectivity Failure from PPAPI to Duckcreek-V2.2 ***[ACTION REQUESTED]***
+
+https://geicoit.atlassian.net/wiki/spaces/ASM/pages/690946164/PPAPI+Runbook+-+Connectivity+Issues - Along with DuckCreek DevOps and "ASD Policy and Edge DevOps" (PPAPI) teams are required in the call."
+
+Suresh informed that we may need to set the alert to high no of OOPS errors .
+
+No root cause found. suresh informed IRT to drop an email to Gautam and DevOPs team to verify the quote summary failures which is causing Edge OOPS error.
+
+
+
+6:35 PM IRT joined the call.
+6:37 PM Dennis informed that Region 1, 10 and 08 observing Edge slowdowns and OOPS error.
+6:38 PM Mulat updated that policy database looks healthy.
+6:39 PM Vamsi informed that Universalrating databaase looks healthy.
+6:40 PM Gautham is verifying the CPU and health check for Edge.
+6:42 PM Robert has reported that coverage drop down for limits and deductions were blank.
+6:43 PM Region 1 is reporting Edge issues and receiving OOPS error.
+6:44 PM Gautam confirmed that Edge Looks healthy and CPU is better now. 
+6:45 PM Dennis informed that Region 10 looks good in last 10 minutes.
+6:45 PM Christy verified about the health check and Raymond informed that everything looks good and from regions 10 it's getting better now.
+6:46 PM Joshua inforemd that most of the users were impact on "View policyhome".
+6:48 PM Dennis informed there was a Edge CPU spike at 6:05 PM. Later, it dropped back to normal.
+6:50 PM Tigran updated that earlier, We have initiated a NOC call for Edge Counsler for CPU greater than 65% , Over the call they have added 05 more instance's.
+6:51 PM Terri requested to check the traffic in Edge CO from any specific app.
+6:52 PM Terri also informed that ESP failures rates were high.
+6:53 PM Babar informed that Policy errors were starting at 6:05 PM.
+6:54 PM Raymond confimred with teams about the Edge Healthcheck.
+6:55 PM *** MI ALL CLEAR Notification Sent***
+6:56 PM Tigran informed that we are seeing a lot of counsler logins with high number of requests.
+7:05 PM Tigran also updated that everything looks good on PPAPI side.
+7:08 PM Vamshi informed that 03 failures were observed in 60 minutes.
+7:11 PM Vamsi infomred that one is for Edge and other two is for MSI client. 
+7:15 PM Vamsi also updated that we are seeing policy and biladc errors which are minimum.
+7:16 PM Gautam has shared the trace id to Vamsi to verify in splunk events.
+7:19 PM Tigran informed that some of the instance's were taking more than 80%.
+7:20 PM Gatuam infomred that atleast 02 of the instance's were taking more than 80%.
+7:21 PM Tigran informed taht we need to check with archeitecutre team as we were running with 49 instance's for Edge CO.
+7:22 PM Vamshi informed that everything looks good on PolADC and abnormalities observed from that SPAN ID.
+7:25 PM Tigran observed that there was a high traffic at 6:07 PM.
+7:30 PM Tigran requested to check the requests in between 7:27 PM to 7:30 PM
+7:31 PM Gautam informed that everything looks good.
+7:32 PM Gautam informed that as the traffic was very high, they may face slowdown issues.
+7:36 PM Tigran informed that requests increased to double, we are adding another 05 instance's for this cloud service and will be reaching to archetechuite team.
+we don't see any application failures and we see the increase in the requests.
+7:38 PM Gautam is adding 05 more instance's for Edge Counsler cloud service.
+7:47 PM Gautam informed that instance's were increased for PD1 and PD8 environments.
+7:53 PM Teams decided to close the call. NOC call closed.
+
+
+Root cause - increase of traffic , more traffic than normal which causes CPU spkies at that time.
+
+
+
+
+
+
+INC000004704796
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1:00 PM Kevin informed that all dynatrace alerts go through moogsooft.
+1:01 PM 
+
+1:03 PM Rahul informed that to page GG team on the call
+
+
+GG Ganesh from Moogsoft team joined the call.
+Rahul informed that application runs fine and no issue were observed.
+Carlos informed that we reomve they won't remove synthetic alert.
+Derek informed that 
+Carlos informed that stops the alerts from APM and remove the alerts from Syntery
+Derek informed that we can supress this alerts temporailiy.
+Ganesh informed that 
+Rahul informed that 
+
+Derek informed that we supress
+
+Carlos informed that we will supress the alerts, If there 
+Carlos informed that 
+They have supressed this alerts.
+alerts realtes to synthetic alerts will come.
+
+Derek informed that "PD::DYNATRACE::ASECAM" APM alerts" need tobe supressed?
+ 
+
+Derek placed supress on ASPRT and ASECAM
+PD-DYnatarace-ASECAM, Technology: DT_APM
+ we can adust tne time, if we need to 
+
+Ashok kil informed that why this test alerts are still triggering
+Derek informed that unitll we have to follow up with dynatrace team.
+Ashok updated that we need to execlude this DT_APM.
+
+Derek informed that we will fix this issue (02 weeks) and for permanent fix this work 
+
+
+Root cause: Dynatrace APM alerts and due to this dynatrace alerts 
+
+
+
+Over the NOCIRT7 call, Derek from Moogsoft team joined the call. Derek has supressed this alerts temporarily by adding this filtering options for "Technology:DT_APM, First Response: ASD L1 Supoort and Manager: Dynatrace". Derek will share an email with all the details for the permanent fix.
+
+
+
+
+8:55 PM Terrance joined the call.
+8:56 PM IRT explained the issue.
+8:56 PM IRT also informed that microsoft patching going on.
+8:57 PM Terrance informed there is a production patching going on for PD8 environment.
+8:57 PM Raj joined the call.
+8:58 PM Terrance informed there is a connectivity failure from CTMAPI from CTMVUE.
+8:59 PM Raj is confirmed about the alert triggered activity.
+9:00 PM Terrance informed that Paas activity is going on for PD8 environment.
+9:01 PM Aditya verified the splunk and observed that events were triggered for last 9 minutes.
+9:02 PM Raj informed that if the same thresold value set to "0" for Pd1 then we need to makes the changes for those alerts.
+9:03 PM Raj also informed not to initiate a NOC call for PD8 environments.
+9:04 PM Temas decided to close the call.
+9:05 NOC call closed.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+IRT paged ASD Policy and Edge DevOps team. Gautam informed IRT to share the Applog Json files for instance_01 and 05 and reuquested to page Splunk team on the call. Joshua from splunk team joined the call and verified from his end and updated that 04 AM the events were very less. Gautam updated that he will sending an email to application team. As this issue seems to be started after the deployments (04AM).
+
+
+
+
+
+
+
+
+
+
+
+ Enable the service in NOC
+ASD policy
+Policyduckcreek core
+
+in advanced controls - 
+
+
+1. SERIOUS INCIDENT - NOTIFICATION – ASD-PEAK-PD1-[Sev0-Critical]-TransactionSummaryEndpoint failures-V3.1-CT [CLOSED(Unresolved)]
+Root cause : Timeouts due to auto update stats trying to update the statistics prior to executing the queries on the secondary node
+Email ref : FOLLOW UP - ASD-PEAK-PD1-[Sev0-Critical]-TransactionSummaryEndpoint failures-V3.1-CT
+
+SERIOUS INCIDENT - NOTIFICATION - ASD-BEAM-PD1-[Sev1-Critical]-Host Not Reporting Data In Splunk-V2.1 [Closed]
+
+Please refer email RE: Splunk Alert: PD1 - ASD-BAR-PD1-[Sev1-Critical]-Host Not Reporting Data In Splunk-V2.1-B006 for more details.
+
+SERIOUS INCIDENT - NOTIFICATION-Conversions issues in production-[Closed]
+
+Recording Session: Overview for SINV change on Prod BSAWRS cloud serivce.
+
+Hi Team,
+
+Please find the recording session link for Overview for SINV change on Prod BSAWRS cloud serivce.
+
+Recording_Link:
+https://geicoteams.webex.com/geicoteams/ldr.php?RCID=4d2bc9be652f1423088cae63b430018f
+Password: vRv68KfE
+
+Regards,
+Raviteja Kundanala
+Emp: H583
+
+
+2:37 PM IRT received splunk alert for "ASD-BEAM-PD1-[Sev0-Critical]-BILBBS Timeouts-V2.1 ".
+2:38 PM IRT observed that Recovery Automation (RaaS) has started.
+2:39 PM IRT paged Billing DevOps L2 and ARE team to join the NOC call.
+2:41 PM Julie informed IRT that primary paymentech endpoint has some issues and teams were working on failover from primary to secondary on paymentech side.
+2:45 PM IRT informed that RaaS has not performed App Pool recycle on BILBBS cloud serive.
+2:46 PM Julie requested IRT to perform App Pool recycle on BILBBS cloud service manually.
+2:47 PM Abdi suggested IRT to perform App pool recycle one instances at a time.
+2:48 PM IRT submitted the App Pool Recycle for BILBBS cloud service through NoOps Portal.
+2:50 PM IRT enabled the circuit breaker.
+2:51 PM Juie informed paymentech failover has been started from Primary to secondary.
+2:53 PM Juie updated that paymentech failover was performed to secondary.
+2:58 PM Julie requested IRT to enable SA on BSAWRS cloud service and start CONMSG cloud service once RAAS completed successfully.
+2:59 PM Julie requested to verify the timeouts.
+2:59 PM IRT enabled SA on BSAWRS cloud service.
+3:01 PM IRT started CONMSG cloud service in PD1 environment.
+3:03 PM Karim requested SQL team to verify that he observed that deadlocks and high CPU during the timeframe
+3:04 PM Mayank informed to julie that deadlocks were observed on coversion procs.
+3:05 PM Erich from SQL team verified and informed there were few blockings at 2:35 PM.
+3:07 PM Mayank informed he observed high CPU spike and requested SQL team to verify.
+3:10 PM Erich verified and informed that GetAccountSummaryAsXML and GetAccountSummaryAsXMLv3 stored procs were running with 25 processs.
+3:12 PM Julie requested SQL team verify the CPU status.
+3:12 PM Eric verified an informed that CPU spike was below threshold which is 60 and there were no blocings observed.
+3:13 PM IIRT verified and observed that all the instances were up and running for CONMSG cloud service.
+3:14 PM IRT disabled the circuit breaker as suggested by Julie.
+3:16 PM Julie observed there were no timeouts later failover performed and informed that everything looks good
+3:19 PM Team decided to close the call as everything looks good. NOC call was closed.
+
+
+
+
+
+IRT received Splunk alert for "ASD-BEAM-PD1-[Sev0-Critical]-BILBBS Timeouts-V2.1" at 2:37 PM. IRT observed that Recovery Automation (RaaS) started at 2:38 PM. IRT paged Billing DevOps L2 and ARE team to join the NOC call. Julie informed IRT that primary Paymentech endpoint has some issues and teams were working on failover from primary to secondary on Paymentech side. IRT enabled the circuit breaker at 2:50 PM. IRT performed the App Pool Recycle for BILBBS cloud service manually through NoOps Portal as suggested by Julie. ulie updated Paymentech failover was performed from primary to secondary. Julie requested IRT to follow the recovery plan. IRT enabled the SA flag on the BSAWRS cloud service and disabled the circuit breaker after starting all the worker roles on the CONMSG cloud service. IRT disabled the circuit breaker as suggested by Julie. Julie observed there were no timeouts post failover and informed that were within the threshold. As timeouts were within the threshold, Teams decided to close the call as everything looks good. NOC call was closed.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Unmapped Notice Found NoticeId[PolicyServicesUnknownError] NoticeSeverity[Error] NoticeMetaData[NoticeId:POL990038:Policy-Not-Found, NoticeDescription:Policy record 11824088 was not found, or a transient error was encountered that prevented loading it.. No record found for policy [11824088], Date []]
+
+
+Failed to retrieve authorizations from Sentry | Exception: MISSING_AUTHORIZATIONS
+
+
+
+Vamshi joined the call
+
+
+Vamshi infomred that no issues from Policy Duckcreek side and suggested to check from Cleint team.
+Sai Vemula informed that no issues were pbserved from client side.
+
+
+
+No records found for policy numbers on Cosmos DB side.
+Geico.AsdService.Components.CustomerAccount.Ecams.Exceptions.TimeoutEcamsException: Timeout exception occurred. Ecams service 'v2/api/account/policies/activationStatus' did not respond in a timely manner.
+
+Kevin 
+
+
+Rajendra informed that policy cache call is showing 75k it's in progress.
+Rajendra informed that policy call is not a cache. 
+
+Deelip informed taht now it's 1000 now. Rajendra informed that policy cache call is now 100K.
+Kevin suggested to change the policy call cache to 150K now.
+Deelip informed taht we are still seeing 408 timeouts.
+Kevin informed that autoscailing was changing at that time but there are not sure. After increasing RU on the Cosmos db side the timeouts shoudl come down.
+Deelip informed that we are still seeing 408 errrors.
+Ajay informed that NSG is there and it's there to connectivity.
+Youssed requested to perform COSMOS DB connectivity check.
+Kevin requested to open a case of Raj for MIcroesoft.
+
+Youseef observed that we need to recyle polciy duckcreek.
+Sentry calls through PPAPI.
+
+Cosmos DB calls from the PPAPI.
+ 
+Deelip is performing PPAPI restart 
+
+Teams on the call informed that they are able to access the policies.
+Raj informed that it's we are seeing 100K on policy cachecall on COsmos DB side.
+
+
+AUtoscale turened now for high volume, during that time 408 events were observed that policy product service. we are seeing improvements while performing rolling restart on policy product service.
+
+
+Shwan informed that we are to raise an ICM for this issue.
+
+
+Shiv informed that we are seeing the errors again.
+Deelip informed that policy cache call again on 429.
+
+Iyappan informed that offset queries are taking huge number of arues.
+
+Youseef requested David to stop conversion and suggested to enable the CB.
+
+Terri informed that we are still seeing sentry failures.
+
+
+Cosmos DB increases the RU from 150K. 
+
+Cosmos db is called by policy database service.
+
+There is an issue from Cosmos side, microsoft is lookin into that.
+
+
+
+Terri informed that we received 429 error at 7:03 PM.
+
+Kevin informed that there are some behavioural cahnges on Cosmos side.
+
+Iyappan informed that there an increase in offset value for Cosmos DB.
+
+Moats informed that we have enabled the auto-scaling few weeks ago.
+
+
+
+They are observed that CPU is very high for Policy API clous service.
+
+
+Deelip informed that no 429 alerts in last one hour, as the RU has increase to 150K.
+
+
+7:59 PM Moats has requested to query for policy api.
+8:02 PM Terri informed that duckcreek could not pull the policies.
+8:03 PM Deeliphas increased the instance's to 15 for polACT.
+8:04 PM Moats has requested to verify the performance for ppapis.
+8:06 PM Vamshi informed that we are seeing a lot from duckcreek side and they are all ppapi failures.
+8:07 PM Kaeri informed that we are seeing cosmos timeouts.
+8:11 PM Moats requested Deelip to check the response time on polact.
+8:13 PM LenH informed that we are looking from cosmos side. 
+8:14 PM Terri informed that we are seeing trasient failures like policy record not found on Edge IN and Edge CO.
+8:15 PM NOC informed that we are still reporting that we are not able to access those policies.
+8:17 PM Youseef informed that we are seeing high throughput to policactivity.
+8:19 PM Terri informed that need to perform rolling restart on POLDUK without any outage.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+A Duty Manager is a Manager/Director who is elected in-charge of a Code Blue Incident.
+The main roles and responsibilities of a Duty Manager are:
+- Driving communications on the call
+- Using idle time to communicate the important updates/ root cause to the attendees
+- Key Decision making about involving a certain team or a vendor in a call
+- Making a decision about publishing an "All Clear" in a Incident
+- Develop and Execute a recovery plan and provide updates about the estimated time of recovery
+- Formulate Swarming techniques about gathering all the necessary data for PIR (Post Incident Review) meetings
+- Basically the orchestrator and decision maker of an Outage call so that many people don't end up trying to take charge.
+
+Duty Managers are only for Code Blue Incidents. Major Incidents are typically handled with Swarming.
+2) As Ishan's screenshot states, Duty Managers have a roster too (Directors and Managers) so they jump in as per their schedule to lead Code Blues.
+
+  
+
+
+
+Execution time is within the threshold. no intermittent blockings were observed. No need to recompile.  
+
+
+
+It's not there on top consumin resources. It's running normal with Single plain ID and it's 3:19 PM to 3:20 PM the execution count was high.
+
+
+Execution count is 03 which is under threshold. No blockings were observed. No recompliation required for this SP.
+
+
+
+
+RE: *** NOTICE *** RaaS Production Release during 03/03 11 PM – 03/04 01 AM EST
+
+RaaS API and NoOps Portal will be offline during this time window and will be online back once release activities are completed successfully.
+
+
+FW: workflow for RaaS opening NOCIRT6
+
+
+
+
+
+all the services whic are effected are down.
+suresh joined the call and informed at 12:18 PM
+12:17 the services were suttdown and suresh informed that frequecy is down but the errors are still happening.
+
+Praveen informed that before carma we do usual a renewals.
+Suresh is informed that after 12:19 PM no events. Step4 is running throughoutthe day and Suresh is verifying with app team does step4 calls to claims endpoint or not.
+ Nilesh from Network F4 team joined the call. issue with 502 geico is sending traffic to IBM cloud
+issue between load balancer on the call.
+
+Juan informed tahat IMI team joined kieon  . Nilesh infomred that annika for SEV1 should be on the call.
+
+
+Nilesh infomred that there was an acitvity in POK. i.e., on Non-Prod
+
+
+Karthikeyan is infomred that timeout is still coming on a06 and verified with Shrinvas about the shutdownd and they did it.
+
+Karthikeyan is chckeing the shutdowns JVM in a06 and they are also blocking the ports. 
+
+
+Carol infomred that we are seeing timeouts between from geico to IBM. Keion and network team. Connection from S06.
+MSS engineer, Trinidad, is seeing out of state drops for traffic going to the F5 VIP in question.   (We're looking at 10.130.208.45:9424)
+Vinay infomred that we are seeing connections erors on S06 server orignating. they are shutting down the serivces in S06 server.
+Will come to know after shutthing down the services on S06 and it will go out of de-commisioned. They have distrubuted the load to other servers. 
+
+Mike from IBM security team. Annika from Ladbalancer support.
+ 
+Naveen infomred that has stopped all teh JVM's unser A06.
+
+Application is tying to reach this "target host(LB):  atlasc-gwservices-pd-cloud.lb-ibmmc-geico.net" and we are seeing intermittent timeouts (ip (LB)- 10.130.208.41).
+
+Mike is waiting for the log and firewall is dropping (10.251.97.220  destination that is dropping on the clean up rule ) the traffic and adding new rule to destinationIP.
+
+Mike infomred that "I see only ping between   Source: 10.130.208.231, Dest: 10.130.107.141  "
+
+
+Keon is verifying the endpoint connectiong timeout to Poladcpd1x15 Windows NT 
+
+Keon is running commadns like grep -i timed, nslookup, telenet service 9999 , df - h
+ Keon is checking now on S07, Ruben infomred that application is timeout and we are seeing timeouts.
+
+
+After restarting the seriveKeon is verifying the target  "https://cifapp-cif-pd-cloud.lb-ibmmc-geico.net:9011/ClaimRetrieval/services/ClaimRetrievalServices" which causes the timeouts.
+SSC semi-trusted server calling CIF VIP
+
+Keon infomred that it's seems to be okay at this moment adn that traffic is encrypted.
+
+and Keon has run the tcpdump to capture the network traffic.
+
+Gary Rye (IBU Claims) informed taht "We are seeing the timeout on the SSC server when it is calling the CIF endpoint"
+
+
+Gay infomred that we are seeing couple of timeouts on S03 and S07 servers. Keon is currently checking the service on S06 server.
+
+Mike informed that 9997 and 9976 port is not able establish the connection. Carol suggested to recycle S06 server.
+
+Keon suggested Karthikeyan to stop the service. Karthikeyan infomred naveen to stop the apache webserver and JVM's on S06 server.
+
+ Keon is verifying all the servers. and he is running watch command. netstat -an | grep SYN.
+
+Naveen infomred that both the serives are down Webserver and JVM on S06.
+
+
+keon has ran this command on 01, 02, 03 and 07...netstat -an | grep SYN.
+
+Gary infomred that no erros in last 2minutes.
+Gary informed that we are timeouts on system.exception.
+2:25 PM Amit informed that MQ has not stopped but the JVM and webserver are stopped. and suggested to stop MQ so that other message will go to other servers. (queue not drained)
+2:26 PM Carols suggested the port and Amit suggested to disable the "PUT".
+2:27 PM Karthikeyan informed that we will stroubleshooting the on S06.
+
+2:28 PM  Amit verified about the stopping of Jboss service and Karthikeyan informed that we are seeing timeouts on Apache as well.
+2:30 PM  Carol infomred that we are still seeing timeouts.
+2:33 PM Gray informed that from SSE server .
+2:33 PM Keon ifomred that 9011 port is timing out and shared the port numbers to Shrinvas to check the serives which are causing timeouts.
+2:36 PM karthikeyan infomred that 100% timeouts comes on Pool App01 and App02.
+2:37 PM Keon informed that from network level we are not seeing any issues.
+2:38 PM Shrinvas has sahred the poll nuber list for this Port NO 9011 
+2:39 PM Keon informed that app servers are connecting through F5 later to serivce Port no 9152.
+2:42 PM 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hello All,
+
+IRT received a situation in Moogsoft for the below alert and a NOC call was opened to resolve the issue. Please access the situation link below for more details.
+
+https://geico.moogsoft.com/#/situation/853777
+
+For any access issues with Moogsoft, please contact MEM Team at AIOpsEngineers aiopsengineers@geico.com
+
+
+
+To :::: DevOps Claims <devopsclaims@geico.com>; ASD Policy and Edge DevOps <asdpolicyedgedevops@geico.com>; IT DevOps PEAK Duck Creek Team <itdevopspeakdct@geico.com>
+
+Cc :::: IRT Edge Incident Notification <irtedgeincidentnotification@geico.com>; Ponnamineni, Krishna <krponnamineni@geico.com>; Golatt, Marcella <mgolatt@geico.com>; Buford, Justin <jbuford@geico.com>; EDGE/PEAK Prod Alert Recipients <edge/peakprodalertreciep@geico.com>; ASD L1 Alerts <asdl1alerts@geico.com>
+
+
+
+
+
+
+
+7:31 PM IRT received an alert "ASD-PEAK-PD1-[Sev1-Critical]-Connectivity Failure from PPAPI to Duckcreek-V2.1"
+7:40 PM IRT initated NOC call.
+7:45 PM paged Duckcreek DevOps
+7:46 PM Suresh joined the call and informed to page ASD Edge DevOps. 
+7:50 PM Karim joined the call and Suresh informed that There is an E-fix going on between 6PM to 9PM.
+7:51 PM Karim informed to page CM on the call.
+7:52 PM Suresh informed to update the runbook related to paging.
+7:52 PM Suresh verified and informed that 7:12 PM delopyments happend on DuckCreek.
+7:53 PM Karim informed that he will be checking with Egde and Policy CM team.
+7:54 PM Karim suggested IRT to reach out CM team over IM to confirm if this issue is related to E-fix or not.
+8:00 PM IRT tried to reach over IM but there was no reponse.
+8:01 PM Karim requested IRT to page CM team on the call.
+8:08 PM IRT informed that ADC deployments (DuckCreek) were completed and kedharnath.
+8:09 PM Karim requested IRT to verify any deployments happend on PPAPI and Suresh informed IRT that PPAPI DevOPs team to be on the call.
+8:12 PM IRT informed that no deployments on PPAPI.
+8:13 PM Karim informed that Deuckcreek errors due to timeouts and suggested to page if we receive the alert again.    
+8:14 PM NOC call ended.
+
+
+12:12 PM IRT initiated the NOC line ""
+12:16 PM IRT paged Policy and Edge DevOps team.
+12:20 PM Masood Joined the call.
+12:21 PM IRT explained the issue and Masood informed IRT to page Underwriting DevOps team.
+12:23 PM IRT paged Underwriting DevOps team.
+12:26 PM Avinash joined the call.
+12:27 PM Masood verified any verified any timeouts on Geicocarma.
+12:28 PM Masood informed that it's calling Duckcreek.
+
+<GEICOCARMARiskSeg.performRestRs status="failure" httpStatusCode="408" IdentityKind="Agent" responseSessionPath="_temporaryIntegration^carmaRiskSegment" responseSelect="GEICOCARMARiskSeg.performRestRs">
+12:29 PM IRT informed that we are reciving alerts on "GeicoUniversalrating"
+12:29 PM Masood informed to Duckcreek Devops team and the events were intermittent.
+12:30 PM Abhijit informed that resopnse timeis 1.2Sec and it won't cause any timeouts.
+12:31 PM Masood informed that all the call are going through successful and seeing 200 status.
+12:32 PM IRT explained that we are seeing under writhing and midstream 
+12:33 PM Avinash verified with underwriting team.
+12:34 PM Avinash informed that transcations were succcessful and suggested to page duckcreek or midstream team.
+12:40 PM IRT paged MSI_Policy_Midstream and DuckCreek team.
+12:41 PM Avinsah informed that in last 60 minutes the response time is good. 
+12:47 PM Masood informed to check the threshold value for this alert.
+12:49 PM Nikhil informed that thresold value is 10 for 5 minutes.
+12:52 PM Bhushan joined the call and Masood informed that errors on Duckcreek to Underwriting endpoint.
+12:53 PM IRT explained the issue.
+12:54 PM Masood informed Bhushan that the thresold value is set to 05 and 20 events in last hour.
+12:57 PM Mohan informed that 18 calls with status code 207 and most of them are validation errors (15 min for last 02, in last 30 min i see ).
+12:58 PM Bhushan informed that 02 exceptions in 15minutes that it's expected and in 18 (01 timeout and rest are exceptions)
+12:59 PM IRT explained that as per the runbook.
+12:59 PM Bhushan informed that mohan wil reach to Downstream for the last errors in 60 minutes, a. 
+01:01 PM Validation error are pretty common and Mohan will check with Down stream for the errors in last 60 minutes.
+01:02 PM Avinash informed that no failuresobserved from underrating side.
+1:04 PM NOC call ended.
+
+
+
+5:15 PM Execution time is below the threshold and it's due to intermittent blockings.
+GZBILDUKPD1LSR1.geicoddc.net,4070
+usp_ConversionDeleteLogicallyDeletedPoliciesFromRollback
+5:16 PM Manoj informed that Code is failing from past few days.
+5:17 PM Manoj informed that it started happening after the Feb 11th release.
+5:18 PM raghavender joined the call.
+5:19 PM Manoj informed that we are seeing deadlock when we are executing the code.
+5:20 PM Manoj informed that it's related to the Billing duckcreek.
+5:21 PM Raghavender informed that lower and production env are different.
+5:22 PM Manoj informed that 9Pm to 6Am when conversion is stopped and encountring the deadlocka nd it's failing.
+5:22 PM Raghavendar informed that did you reviewed the report from devolper and did develpoper review the deadlock graph.
+5:23 PM Raghavendra suggested manoj to raise a ticket for this cause(As it should be reviewd by performance and developer team). 
+5:25 PM Manoj informed that this sp runs with batch size of 10 every time and failing with the timeout value.
+5:27 PM Raghavendar suggested it needs to be reviewd with Devloper team and performance team.
+
+
+
+2:32 PM IRT paged "SQL_Server_L1_Support & DevOps_Policy_DuckCreek" on the call.
+2:33 PM Suresh and Theresa Stair joined the call.
+2:33 PM IRT observed that Raas has started performing the recovery steps.
+2:33 PM As per the runbook, IRT has disabled the circuit breaker.
+2:34 PM Erich informed that Sai ran the Deny connections jobs on conversion and batch nodes.
+2:35 PM IRT has enabled the circuit breaker.
+2:36 PM Chris observed that we are seeing alot of errors on ASA applications.
+2:37 PM Theresa stair informed NOC team to open an MI.
+2:38 PM Kaeri informed that conversions has started processing at 2:00 PM and it's stopped now.
+2:38 PM Suresh informed that Raas has completed successfully at 2:35.
+2:39 PM Jake informed that we are seeing failures on ASA, edge and Policy related transactions.
+2:40 PM Erich informed that we should be relief once asyncronous completes on database side.
+2:41 PM Erich informed that connections appearing to be dropping. 
+2:42 PM Srinivas informed that ran the job to kill the failed connections.
+2:43 PM Erich informed that automatic failover to manual and currently we are seeing 20 connections.
+2:43 PM Cynthia asking IRT to verify the application and health check dashbaords.
+2:44 PM Suresh informed that active sessions were low and Gedion informed that all CPU processing.
+2:45 PM Teams informed to verify the health checks and the application dashboards.
+2:46 PM Terri informed that Policy has started processing at 2:43 PM.
+2:47 PM Chrish informed that Region 8 is successfull and all the other regions were starting good.
+2:47 PM IRT informed that ehalth check looks good.
+2:48 PM Karim informed that V-metric dashboadrs looks good.
+2:50 PM NOC team has sent the All clear sent.
+2:51 PM Williams informed that 03 agents verified and informed that applications looks good.
+2:52 PM Srinivas informed that we didn't enabled the CB and Batch logins.
+2:53 PM Raymond informed that all the ragions looks good.
+2:53 PM Erich infomre dt tgat we are looking good from SQL side (600 sessions).
+2:54 PM Cynthia suggested to kill the sleeping sessions.
+2:55 PM Vivek from UW team joined the call and Theresa informed that we are looking good.
+2:56 PM Erich has cleanedup the sleeping sessions.
+2:57 PM Cyntiha informed that we have to start the conversion and batch right.
+2:58 PM Terri informed that we will start conversion post RCA.
+2:58 PM David suggested to open an another NOC line region 1 for ASA.
+2:59 PM Jake acknowledged.
+3:00 PM Sales DevOps team moved to NOC3 for ASA ffailures on Region1
+3:01 PM Srinivas sugested to clean the Sleeping sessions.
+3:02 PM Kaeri informed to kill the slepping sessoins on POLadcpd1X and those are long running.
+3:04 PM Erich verified and informed that 10 active sessions.
+3:05 PM Gedion informed that we need to sync back on batch and conversion.
+3:06 PM Nazmul informed that reagion 1 looks good on ASA app and NOC line is closed.
+3:07 PM Erich has changed into sync mode and also changed failover to automatic.
+3:18 PM Suresh is verified about the conversion.
+3:19 PM Cynthia informed that we are waiting for the database to synchronise. 
+3:26 PM Cynthia informed that we are seeing high CPU on SQL node.
+3:44 PM Erich informed that Syncronization is getting closer now.
+3:45 PM Kaeri informed thae we are seeing SQL errors at 3:41 PM
+3:46 PM Kaeri informed that prod duckcreek SQL timouts errors in last 10 minutes. and Erich informed that it's related to availability group is back in sync.
+3:48 PM David informed that couple of QM alers on Edge and Cynthia informed that we just suspend and Queue started catching -up.
+3:52 PM Suresh verified about the SYNC-up and ERich inforemd that we are getting closer.
+3:53 PM Erich informed that we are looking now and Cynthia informed to enable the logins for batch.
+3:55 PM Kaeri informed that we are seeing timeouts. 
+3:56 PM Erich verified and observed that no long running queries.
+3:57 PM Suresh informed that no seeing any timeouts adn it's at 3:53 PM.
+3:58 PM Cynthia informed Erich ifnormed to check the query of the SP.
+3:59 PM Cynthia informed Erich to enable the batch logins.
+4:02 PM Cynthia informed IRT to turn-on the batch servers.
+4:03 PM Kaeri informed that it can be users on "oltp" or users on "Conversion" and SQL team can figure it.
+4:05 PM Karim is verifying abou the batch servers.
+4:06 PM Suresh has starting the batch servers.
+4:06 PM Erich observed that batch connections on SQL side.
+4:10 PM Vamshi informed that batch servers has started.
+4:16 PM Erich observed that we are seeing 58 batch connection now.
+4:16 PM David confirmed with Theresa to start the conversion.
+4:17 PM Conversion team has started the IIS roles on conversion side.
+4:23 PM David is verified about hte conversion and Erich informed that 49 connections form the conversion and active sessions looks good.
+4:24 PM Erich ifnormed that no recompilation.
+4:25 PM David verified with teams to 
+4:26 PM David and Karim informed IRT to disable the CB and IRT disabled it.
+4:47 PM Erich informed that active sessions looks good.
+4:31 PM IRT verifeid about this clous service "gze-cnvrrb-PD1-cls-cnvrrb-001" and David informed it will be stopped till 10PM tonight.
+4:36 PM David informed that we follow the policies from 5PM.
+4:37 PM Erich ifnormed that acitve seeions looks good, no blockings, no need to recomplie any SP's.
+4:38 PM David requested IRT to restart the cloud service "gze-cnvrtm-PD1-cls-cnvrtm-001, gze-cnvrmp-PD1-cls-cnvrmp-001 and gze-cnvrms-PD1-cls-cnvrms-001" informed that conusmer count matches that the reason we are restarting the cloud service.
+5:52 PM As suggested by David, IRT has sucessfully restarted the cloud services.
+5:53 PM As issues were observed, Teams decided to close the call.
+5:54 PM NOC call closed.
+
+ 
+Updates over NOC1: craig informed that App81 need to be shutdown and traffic rolled over to App 82. Th error shows that the DB will not revoer till recycled and Sonali is performing it.
+Sonali iformed that App82 is started taking connections and Tigran informed that We are login the policies and tey are removing UC for applications.
+
+11:55 PM Shiv informed that ECAMAPI at 
+11:56 PM
+11:57 PM Kristin informed that we have restart the
+11:58 PM Youssef informed that we can login to policies.
+11:59 PM Teams informed that we need IBM infrastructure team and middleware team.
+11:59 PM Ecams UC is being put up.
+12:00 PM Shiv informed taht we are not able to connect from SSO and Renaite informed that Sales were not imaptcting.
+12:01 PM 
+from David King to everyone:    12:01 PM
+Mobile impact: 100% of policy retrieval is failing. No customers able to log in
+from David King to everyone:    12:02 PM
+Both EDGE and OASIS
+12:02 PM Vinod from Middleware joined the call nad Youssed informed that at 11:30 that customers not able to login (handshake from lap to usersing in).
+12:03 PM Youssef requested to check the ldap userstore health check.
+12:04 PM Ecams UC is up at 11:59 PM.
+12:05 PM Kristin informed that depedency is down and Tigran informed that in last 2min no failures from EcamsSSO exception ().
+12:07 PM Sylvia is running health checks and TIgran has shared the endpoint inipd1app02.pd.ibu.geico.net:8445, ldaps://ecamsldapalt.pd.ibu.geico.net:1636.
+12:09 PM Ram informed taht we are seeing spike on imperva started around 11:10 PM and incoming requests doubled from 200 to 400.
+12:12 PM Mobile UC Is up as of 12:10
+12:12 PM shiv informed that need help from Dev Team as we are seeing 
+12:13 PM Youseef confimring to recycle the userstore Ecams.
+12:15 PM Sonali informed that we can retart ldap but it wont be the soltion and Youseef informed that we are seeing timeouts and suggested to restart Ldap Ecams.
+12:16 PM Teams are failover the coustmer to Pd8 west and Abhiji informed that health check failing on PD1.
+12:20 PM Youssef informed to do failover to west pd8 and Shiv is verifying the logins and health check on PD8.
+12:21 PM Shiv informed that west logins were failing.
+12:22 PM craig informed that App81 need to be shutdown and traffic rolled over to App 82. Th error shows that the DB will not revoer till recycled and Sonali is performing it.
+12:24 PM Sonali iformed that App82 is started taking connections and Tigran informed that We are login the policies.
+12:25 PM Tigran ifnomred that Edge policies were able to login and Craig informed that we are good from insites.
+12:25 PM Youssef informed to remove EUC.
+12:27 PM Theresa informed NOC team to send All Clear.
+
+MObile UC in not down and Mobile is currently pushing the deployments to resolve this UC issue. Davind informed that MObile UC is removed now. 
+
+from David King to everyone:    12:01 PM
+Mobile impact: 100% of policy retrieval is failing. No customers able to log in
+from David King to everyone:    12:02 PM
+Both EDGE and OASIS
+from Tigran Soghomonyan to everyone:    12:09 PM
+inipd1app02.pd.ibu.geico.net:8445
+from Tigran Soghomonyan to everyone:    12:09 PM
+ldaps://ecamsldapalt.pd.ibu.geico.net:1636
+from Shiv Yadav to everyone:    12:11 PM
+https://geico-shc.splunkcloud.com/en-US/app/search/search?sid=1614359254.745991_D4E4F7EA-C5BE-42AF-84F0-3F60A5A796DC
+from Praveen vegesna- Insite infrastructure vegesna to everyone:    12:12 PM
+frup7940.ibu.geico.net
+from David King to everyone:    12:12 PM
+Mobile UC Is up as of 12:10
+from Praveen vegesna- Insite infrastructure vegesna to everyone:    12:12 PM
+11:45
+from Jeff Dunn (SRE & Risk Management) to everyone:    12:12 PM
+https://zji30710.live.dynatrace.com/#problems;gtf=p_8836057659241374589_1614354557551V2;gf=all
+from Jeff Dunn (SRE & Risk Management) to everyone:    12:13 PM
+Several issues have been seen in Dynatrace.
+from Jeff Dunn (SRE & Risk Management) to everyone:    12:14 PM
+10:49 to 11:33
+from Youssef Ennaciri to everyone:    12:14 PM
+yes, same we are seeing in Azure / Log analytics / splunk 
+from Jeff Dunn (SRE & Risk Management) to everyone:    12:14 PM
+10:36:10:37
+from Jeff Dunn (SRE & Risk Management) to everyone:    12:14 PM
+9:58:10:36
+from Amy Lemon to everyone:    12:14 PM
+Since GEICO Express is still working can customers be redirected there to help prevent some phone calls? 
+from Theresa Stair to everyone:    12:15 PM
+Yes
+from Vamshi G to everyone:    12:23 PM
+https://geico-shc.splunkcloud.com/en-US/app/geico_asd_policycore/search?sid=1614360162.729334_F054F089-F22A-45CB-AAE1-BA8EBF5B071D
+from David King to everyone:    12:26 PM
+Removing Mobile UC now
+from Rajeev Kotapati (Confidence Score) to everyone:    12:32 PM
+Confidence Score : ECAM SSO reporting spike in  http 500 errors starting 11:55AM
+from Rajeev Kotapati (Confidence Score) to everyone:    12:35 PM
+Confidence Score : SSO 500 errors coming down since 12:20
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4:49 PM Teams joined the call.
+4:50 PM Roman informed that we are seeing proxy issues on Lower environments as well.
+4:51 PM Kevin informed that there was a change in Proxy.
+4:52 PM Roman informed that proxy was down and they are bringing it up.
+4:52 PM Roman updated that health check was not good.
+4:55 PM Roman observed that requests are still timing out.
+5:00 PM Roman informed that we are inviting Networking security
+5:02 PM Leonard informed that other environmets were also effected related to proxy.
+5:03 PM Igor informed there is an another NOC call going for the same issue which is NOCIRT3
+5:08 PM Roman informed that proxy issue is related to same and they moved to NOCIRT3.
+5:09 PM NOC call closed.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1:11 PM Jake informed that we are paging network team.
+1:12 PM SQL confirmed that BILDUK and POLDUK CPU looking good.
+1:13 PM SQL team informed that no blocikings observed.
+1:13 PM Teams informed that from edge side health check looks good.
+1:15 PM Teams are verifying about the billing health.
+1:16 PM Mehar informed that splunk is having issues and also verified the app insights and observed that traffic is very low.
+1:17 PM Tigran informed that we are seeing billing internmittent duckcreek errors.
+1:18 PM Mehar informed that requests are taking longer time and the response time is bad 
+1:18 PM Abdi informed that Raas has kicked-in and it's recycycling the BILBBS and alos observed low response from duck creek.
+1:19 PM Abdi informed that Duckcreek recycle has completed.
+1:19 PM Theresa is confirming about the recycle of BILBBS cloud service.
+1:20 PM Mehar informed that recycle has completed and billing looks good.
+1:20 PM Abdi informed that we are receiving QM alerts.
+1:23 PM Jake informed to run the Edge alive and IRT has acknowledged it.
+1:24 PM Cynthia informed that region 6 looks good but it's working slow and Soumya is confimring with teams about the status of the call.
+1:25 PM Mehar informed that response time was good.
+1:25 PM Jake informed that Claims are okay and we are still waiting for the update from regions.
+1:26 PM Theresa is verifying about the EtA for Splunk slowness issues.
+1:27 PM Jake informed that Regoin 2 and 5 is reporting little slowness.
+1:27 PM Theresa observed that we are not seeing any timeouts now.
+1:28 PM Kim informed that we are still slowness on portfolio.
+1:30 PM Kim notified that while accessing from launchpad to portfolio we are facing slowness.
+1:31 PM Chris informed that Region 10 is still facing issues on launchpad and portfolio.
+1:31 PM Teams informed that we are seeing slowness on launchapd and portfolio.
+1:32 PM Tigran informed that we are seeing slowdown from PPAPI to policyduckcreek and Vamshi is verfying it.
+1:33 PM Deeliep observed there are 39 timeouts on duckcreek.
+1:34 PM Jake observed few QM alerts on portfolio. Theresa is confimring to restart PPAPi.
+1:34 PM Vamshi fomred that policy duckcreek looks good.
+1:35 PM Deelip informed that from PPAPI to Duckcreek there are 89 timeouts in last 60 minutes.
+1:36 PM Tigran verified the app insights and informed that there is no pefromance degradation on portfolio.
+1:37 PM Jake informed that last alert has triggered at 1:23 PM on portfolio.
+1:37 PM Teams notified that R3/R9 were reporting slowness.
+1:38 PM Theresa asking about that are we able to access the page on portfolio and Teams confirmed that we are not observing white blank while accessing.
+1:38 PM Deelip informed that 11:00 AM there is a spike in the response time with 240ms.
+1:39 PM Habib asking that we observed any degradation from Duckcreekt to SQL.
+1:40 PM Gedion informed that currently 46 seessions were observed on duckcreek side.
+1:41 PM Tigran is verifing about BILBBS recycle and Habib confirmed that it has recycled.
+1:42 PM Mehar informed that no issues were observed from billing side. 
+1:42 PM Vamshi informed that no timeouts were observed on Duckcreek side.
+1:42 PM Kim informed that Portfolio looks good and we are able  to access it.
+1:43 PM Jake verified with agents and confirmed that majority of the regions were looking good.
+1:43 PM Theresa requested NOC team to send the all clear notification.
+1:44 PM Jake is verifying with teams about any issues.
+1:45 PM Habib informed that will do an RCA on another NOCline.
+1:45 PM Chris asked is this issue happened due to proxy change.
+1:46 PM Jen informed that it was not cause by the proxy issue.
+1:46 PM IRT has disabled the alive edge dashboard and Habib informed that will open a separate call for RCA.
+1:47 PM Teams decide to close the call. NOC call ended.
+ 
+2:34 PM Rahul requested IRT through webex to initiate a NOC for RCA on MI edge.
+2:38 PM IRT initiated NOCIRT1 line.
+2:46 PM Rahul joined the call.
+2:48 PM Rahul request to page Billing DevOps and Policy DuckCreek DevOps.
+2:50 PM Deelip and Shantipriya joined the call.
+2:51 PM Deelip inforemd that no abnormalities were observed from PPAPI.
+2:51 PM Siva from Billing DevOps joined the call.
+2:52 PM Rahul requested to verify in between 12:45 PM to 1:45 PM.
+2:52 PM Rahul informed that there was a huge latency and requested teams to verify from their end.
+2:53 PM Rahul notified that response time and operations were taking too long and observed failures on 01:07 PM after that it's taking too long to pull-up the policies.
+2:54 PM Suresh observed that there was a high response time at 12:45 PM on biling side.
+2:56 PM Suresh informed that multiple endpoints were failing on claims side from 12:45 PM to 12:54 PM and the response time was 10sec.
+2:57 PM Rahul verified and informed that until 1:30 PM it's was taking too long.
+2:58 PM Siva informed that activites proccessed were having delays from 1:20 PM to 1:40 PM.  
+3:00 PM Siva verified the app insights and observed that transcations were porcessed.
+3:01 PM Rahul requested to check the BILBBS app insights. Siva verified and observed that from 12:50 PM the response time was high on BILBBS upto 1:20 PM and Rahul informed that SQL looks good.
+3:05 PM Siva notified that at 1:12 PM the response was high on HTTP.
+3:07 PM Suresh informed that claims was having issue at that time.
+3:08 PM Suresh informed that Mac Midstream was taking more than 10sec and the rest all are billing calls.
+3:09 PM Rahul informed that timeouts observed on portfolio is almost 30 sec.
+3:10 PM siva notified that no timeouts were observed at that time.
+3:10 PM Rahul informed that we observed there was a high response from billing side.
+3:11 PM Siva informed that no issues observed related to app insights.
+3:13 PM Siva observed there was a high SQL CPU.
+3:13 PM Suresh informed that it was high at 1:28 PM later it came back to normal
+3:14 PM sandeep has shared the query to run on splunk.
+index=billing_pd  cloudServiceName=gze-BilBBS-pD1-cls-BilBBS-001 CallerApp=Portfolio Level=ERROR
+3:16 PM Siva ran the query and observed only few events at that time.
+3:22 PM rahul informed that everything was failing on portfolio.
+3:23 PM Rahul ran this query "index=billing_pd  cloudServiceName=gze-BilBBS-pD1-cls-BilBBS-001 CallerApp=*" and events only for 2minutes.
+3:24 PM Teams infomred that response time for Policyadc is taking more than 10sec.
+3:25 PM Siva verified and notified that no logs were observed for more than 10 sec.
+3:27 PM Siva confirmed that at 12:59 PM it's was taking 07 sec.
+3:29 PM suresh informed that billing issues at 1:29 PM after we don't see any issues.
+3:30 PM Rahul informed that when it's calling from bilbbs to bilduckcreek calls taking longer time in appinsights.
+3:31 PM Teams decided to close the call. NOC call ended.
+
+BILBBS -> BILDUK response times were longer time than usual.
+
+Resolutions - 
+
+
+
+
+
+
+
+
+
+
+
+
+3:44 PM IRT received an alert "ASD-BEAM-PD1-[Sev1-Critical]-High Active Session-V2.1".
+3:44 PM IRT observed that Raas has started performing the recovery steps.
+3:45 PM Teams joined the call.
+3:45 PM IRT has enabled the circuit breaker.
+3:49 PM Soumya informed to check if the payments jobs is running or not (remittance file)
+3:50 PM IRT informed that currently BPYP is processing.
+3:53 PM Siva informed that SQL server CPU is high.
+3:54 PM IRT verified the V-metric dashboard and observed that CPU is above 85%.
+3:54 PM Erich informed that we are seeing a high OLTP traffic and CPU is back to normal.
+3:55 PM Abdi informed IRT to start the CONMSG cloud service and disable the circuit breaker.
+3:56 PM Erich is verifying about the sessions clean up jobs and also suggested that it can be disabled when there is an issue.
+3:57 PM IRT has performing the recovery steps.
+3:57 PM Abdi verifying with Soumya to disable the session clean-up job and soumya is checking with mayank on this.
+3:58 PM Mayank joined the call and soumya explained the issue.
+3:58 PM Erich informed this job was runnning for more than 10 minutes.
+3:59 PM Mayank suggested that we can't disable this job as it takes ot load more tables to clean-up if we stop and run again.
+3:59 PM Ramesh notified that there was a paln swtich on this SP "GEICO_SP_BIL_GetPolicyTermConfigByPolicyTermId"
+4:00 PM Soumya informed that we got an approval from terri to not process conversions until 01 AM.
+4:01 PM Erich informed that SQL CPU looks good now.
+4:01 PM Julie informed there might be a lag issue on splunk.
+4:02 PM Christy notifed that we received Edge OOPS error.
+4:03 PM Soumya informed that remittnance file was still in progress.
+4:05 PM Ramesh observed that execution time was high and it took more than 10minutes.
+4:06 PM Ramesh suggested  to fix the code for this SP . Mayank asked Ramesh that can we do a force query plan.
+4:07 PM Soumya informed that remittance file was completed before Raas kicks in.
+4:08 PM Soumya informed that SQL CPU is looking good. 
+4:08 PM IRT verified with Soumya about the conversions.
+4:09 PM Soumya informed that we will turn-on at 1:00 AM and it will be taken care by us.
+4:10 PM Frank informed that remittance file was completed at 3:47 PM.
+4:11 PM Soumya ivs verifying about the backlogs for SINV.
+4:12 PM mayank informed that 2000 to 3000 SINV  will be processing and suggested to keep SINV to |3} at 6 PM.
+4:11 PM Maynak suggested that we can change the SINV value. Once the payments process is done then 
+4:12 PM Maynak informed that SP is the cause and Erich is informed ti was dow to session clean up.
+4:13 PM erich informed that OLTP is very high and Ramesh is asking to share the frequent executed SP.
+4:14 PM Maynak informed that OLTP traffice is very high. 30% more vloume what we use to see.
+4:14 PM Mayyank inofrmed that 15 to 20 000 between OLTP servers.
+4:15 PM Soumya informed taht we are changing the config file for timeouts.
+4:17 PM Piyush informed taht if the fails then we can go through with Datafix server and timeouts value sets for 15min.
+4:17 PM Mayank suggest that the timeout valuse should be 5min.
+4:20 PM Soumya asking any file taking more than 5min.
+4:21 PM Soumya informed that we are recylcling the datafix server, running the file and will revert it back.
+4:22 PM Mayank iformed to run the file once the OLTP traffic is below.
+4:22 PM Eileen has approved. Piyush informed that we will run after 6 PM.
+
+
+ 
+
+
+Keon informed that Pass request body failed ""
+3:00 PM Keon infomred that timeouts were happening on network level from F5 later it's connecting to backend and there we are seeing errors.
+3:01 PM Keon verifeid  the ip address "10.130.208.232, 10.130.208.200 " for S07 and S03 and observed that it's failed to make connection to backned.
+3:02 PM Keon informed that we are seeing connection refused error.
+3:03 PM Keon ran the command and observed that 
+3:05 PM Keon verifeid and observed that 9068 port number is not listening.
+3:06 PM Gary infomred that we are not able to see the port number in the catalog and also verfying the same in firewall rules.
+3:07 PM Krishna informed that 9068 port number is for JVMs on Eapp02.
+3:08 PM Keon is verifying the same 9068 port number on S06.
+3:08 PM Karthikeyan notified that Connection refused for Port number 9068 is expected.
+
+ecifapppd1s02 - bpsc jvm running only on this node
+ecifapppd1s07 - finc jvm running only on this node
+
+3:13 PM Keon informed that we are seeing brokern pipe errors for this ip address: 10.130.119.42
+3:15 PM Vinod from midddleware team infomred that we are seeing 405 status errors.
+3:17 PM Karthikeyan informed that we are still seeing timeouts on S06 server.
+3:19 PM Suresh infomred that we don't see 502 errors after 2:14 PM from duckcreek side.
+3:20 PM Keon logged into e07server and ran the "lsof" command to check the status of all the serivces.
+3:27 PM Keon is still performing the troubleshotting steps on S07 and observing java.net.socketTimeoutException.
+3:35 PM Keon observed that all the ClientsessionID are on G960U for java.net.socketTimeoutException.  
+3:40 PM Keon notified that the issue on the backend also verified the traffic on port number 9011 in the S01 server.
+3:42 PM Keon verified and infomred it's failing on 9152 port number.
+3:42 PM Gary infomred that call is going through F5 with 9011 port number.
+3:45 PM Keon verifying the apache web logs for this Port no : 9152 for S01
+3:49 PM Vinay verified about the updates on the call and Keon informed that we are verifying the logs for 9152 port number.
+3:56 PM Gary infomred that timeouts were are on 9011 portnumber on this "giecifapppd-cloud-eapp6.app-ibmmc-geico.net".
+3:57 PM Vinay has shared the path for 9011 on Apache error log and Keon verified the path and observed the proxy error.
+ 
+4:20 PM Karthikeyan verified and gray informed that ssc to centralio there should be no proxy.\
+4:21 PM Gary infomred that duckcreek to IBM it's configured through proxy.
+4:22 PM karthikeyan has shared the log to keon to check in which server it's hitting.
+4:26 PM Keon is verifying the efc error.log on S03 server.
+4:28 PM Keon informed that we need to check the session id on the four app severs as the response time is more than 60 sec.
+4:33 PM Kirshna infomred that IF team should be on this call to verify this.
+4:36 PM Gary verified in splunk with session id and ednpoints and observed 034 events. Gary also tried with Source path and session id and observed 46 events on (03 ifserver and 02 ssc server).
+4:41 PM Gary observed that timeouts were on multiple servers in last 30 minutes.
+4:47 PM Gita joined the call and Krishna infomred that we are seeing timeouts on SSC.
+
+4:49 PM Krishna suggested to check the events in between 16:36 to 16:37 PM to check for IFlogs.
+4:52 PM Krishna verified the logs and suggested to check in dynatrace dashboard. Later, Gary observed that 07 services were running on port 9051 and the highest response time is 50.3.
+
+
+5:09 PM Krishna informed that it might be an application issue.  
+
+5:17 PM 
+
+They are verifying the timeouts on all the servers with the sourcetype and session id's = 
+
+
+
+5:48 PM Krishna informed that S06 is off now and Carol infomred that we 
+
+
+
+Vinay informing like they will open a call again by tomorrow.
+
+
+Root Cause : 
+
+
+Resolution : 
+
+
+8:31 PM Vamshi is performing the iis restart by removing the instance's from the ILB.
+8:32 PM Nilesh informed that we are able to see the tiemoouts for this policy numbers.
+8:37 PM Moats informed that we received an alert for policy cache call.
+8:39 PM Terri updated that 429 erros were on 8 different keyid.**
+8:40 PM Vamshi informed that IIS reset on duckcreek side.
+8:41 PM Nilesh informed that we are continue to see errors.
+8:41 PM Terri informed that we are seeing errors on Duckcreek side.
+8:44 PM Terri updated that we are still seeing errors on cosmos db side.
+8:45 PM Terri updated we can currently the batch jobs.
+8:45 PM Praveen informed to track the policy number.
+8:47 PM Terri requested to stop the ADC renewel steps batch job.
+8:49 PM Scheduling team has acknowledged and informed that job ended okay at 8:00 PM.
+8:51 PM Moats requested to check the policy numbers which are taking high response time.
+8:53 PM Deelip ran the query and observed that 80 records in last 24 hours with high counts.
+8:55 PM Kaeri requested to share the policy numbers and Deelip has shared it.
+8:56 PM Moats informed that 3,410 calls for the policy number is very high.
+9:02 PM Kaeri verified the policy Number and informed that 429 errors were successfull.
+9:03 PM Nilesh reuquested to page Dsat team on the call.
+9:08 PM Deelip is performing rolling restart on ppapis cloud service.
+9:13 PM IRT paged DSAT paged team on the call.
+9:14 PM Ramakrishna joined the call from Dsat team.
+9:15 PM Kaeri has shared the policy number to Ramakrishna.
+9:16 PM Deelip informed that we have 24 instance's on PPAPIS and Shiv requested to perform update domain with IIS restart.
+9:18 PM Ramakrishna informed that policy number is calling from 03 PM onwards.
+9:19 PM Kaeri informed that we are not getting success response.
+9:20 PM Ramakrishna informed that we didn't perform any deployments on Dsat side and will update further on this.
+9:21 PM Nilesh requested to remove the policy from the queue.
+9:21 PM Terri informed that beacuse of one policy we are observing the down in application.
+9:22 PM Terri requested if we can filter from Dsat to PPAPI.
+9:24 PM Youseef informed that we can filter the Dsat from PPAPI side.
+9:28 PM Deelip informed that we are not observing all the instance's not showing in DevOps catalog.
+9:30 PM Ian informed that it will take 15minutes to reflect on the DevOps catlog.
+9:34 PM LenH informed that we will lower the case and dropeed from the call.
+9:37 PM Terri informed that we are still seeing 409 erros.
+
+App pool recycle 
+
+from Kiran to everyone:    2:17 PM
+https://docs.microsoft.com/en-us/dotnet/api/microsoft.azure.documents.client.resourceresponsebase.requestdiagnosticsstring?view=azure-dotnet#Microsoft_Azure_Documents_Client_ResourceResponseBase_RequestDiagnosticsString
+from Kiran to everyone:    2:17 PM
+On each response the ReqeustDiagnostics will help in knowing what exactly happened part of the request interaction.
+from Kiran to everyone:    2:18 PM
+Is it already captured and available now?
+
+
+Luciano -Cosmos , 
+Sudeep - Microsoft.Hari
+** We have seen some spike on our site, monitored the going to west region and it's hits 429 errors, later 1000 of 49. We increased RU on Policy core for policy cach call from 75K to 150K.
+Microsoft team informed product team is working, they will update yet.
+We took several steps on geico side.
+At 3AM, today morning, it was resolved.
+Root cause - some processes/conncections going into the west region / 
+RequestDiagnosticString can be obtained from the SDK responses, like so: https://docs.microsoft.com/en-us/azure/cosmos-db/troubleshoot-dot-net-sdk?tabs=diagnostics-v2#high-network-latency
+kirankk@microsoft.com, harsudan@microsoft.com, maquaran@microsoft.com, jawilley@microsoft.com is the list to include for reviewing client side settings 
+pdyson@geico.com
+from Hari Sudan  to everyone:    3:08 PM
+harsudan@microsoft.com
+
+2:04 PM Manju verified on Edge application and Marshall informed that we are seeing some socket timeouts.
+2:05 PM Hari joined the call from microsoft team.
+2:06 PM Raj explained the issue that we observed spike on our site and the traffic is moved to west regions.
+2:12 PM Hari informed that replication to other regoins will have the latency.
+2:13 PM Hari requested to review the applications settings on cosmos side.
+2:14 PM Nag informed that issue happened on yesterday and was confirmig this fallback happeend from Microsoft side or it's a application setting issue.
+2:16 PM Hari informed that he wants to review the application diagnostics logs and the settings as well.
+2:17 PM Hari want to follow up with the TTL beharviour and Nag updated that TTL is 900 sec which is reasonable.
+2:18 PM Nag informed that application team will confirm on this issue.
+2:19 PM Raj notified that we enabled multipe write locations for high availability.
+2:20 PM Hari updated that we can modify the application settings if there is an issue.
+2:20 PM Paulin informed that there was a request change happend for high availability on March 4th release.
+2:23 PM Praveen informed that most of the 408 errors were on east region and 429 errors were on west region.
+2:25 PM Kiran confirmed that it's due to higher latency.
+2:27 PM Raj informed that it's routed to west region when we were trying to write in east region.
+2:29 PM Hari informed that there is a change in application standpoint for multiple region write set and it's enabled now.
+2:30 PM Praveen informed that there was a change on march 4th release for multi region for high availability.
+2:32 PM Deelip notified that we were testing in lower enviroments before updating in prod environment.
+2:33 PM Govind verified about the reads/write issue for 429 errors.
+2:34 PM Deelip updated that issue still exists even after 2 AM.
+2:35 PM Kaeri informed that the issue still exists at 1:58 AM on 429 and 408 errors.
+2:37 PM Praveen confirmed that we also observed alerts on lower enviroments.
+2:38 PM Hari updatd that we will follow-up with our internal team on this issue.
+2:39 PM Nag notified this config was happened over an month ago and now we observed so many timeouts on 429 and 408 errors.
+2:40 PM Nag informed that we observed the traffic shifted to west side when there is a response time of 40 millisec on east side.
+2:44 PM Raj informed that as it's storing a lot of important information that's reason we have shifted to multi region.
+2:45 PM Keri informed that along with 408 and 429 errors there is also a latency on both regions.
+2:47 PM Hari was confirming about the client dagnostics logs and Nag informed that it was enabled.
+2:51 PM govind confirmed about the cosmos diagnostics string status.
+2:52 PM Nag informed that in last 06 hours we are seeing few 408 and 429 errors again.
+2:53 PM Nag was confirming about if DSAT pipeline is enabled.
+2:55 PM Marshall informed that we are seeing 03 errors socet errors in last 04 hours and DSAT pipeline is still running.
+2:57 PM Hari updated that failures were continonous for the write operations.
+2:59 PM Manju informed that we don't see any alerts for 428 and 409 timeouts after 1:58 AM.
+3:01 PM Hari informed that we will work on spliting the partiation and latency issue for 408 and 429 timeouts on both regions.
+3:04 PM Hari updated that we will verify with application team for the PEAK Cosmos application setting.
+3:10 PM Teams on the call informed that mircosoft team will verify the issues on Cosmos SDK and verify the latency issue for 408 and 429 timeouts on both regions. 
+3:11 PM NOC call ended.
+
+
+1:) Caused the traffic, what happened to the traffic after shifthing to west.
+Microsoft team will be working with internal teams. 
+
+
+Microsoft will working with the internal teams tomorrow at 2PM.
+
+
+harsudan@microsoft.com
+from Manju Ayyampalayam to everyone:    3:09 PM
+measwaran@geico.com 
+from Govind to everyone:    3:15 PM
+We will setup teams call. 
+
+
+
+6:21 PM IRT received a request from Nimish to open a call for "CONMSG PD1 (messaging worker roles for Billing Conversion)"
+6:23 PM IRT acknowledged.
+6:28 PM IRT initiated a NOC call and shared the link to teams.
+6:30 PM David and Nimish joined the call.
+6:30 PM IRT explained the issue.
+6:31 PM Nimish requested to perform hard restart for this CON-MSG cloud service.
+6:32 PM IRT explaiend that CON-MSG cloud service is in progress with 05 worker roles.
+6:36 PM Nimish requested to perform hard restart on CNVRMP and CNVRTM in production conversion cloud service.
+6:37 PM IRT has submitted the request to perform hard reboot through Docat.
+6:43 PM David asked throught Azure blog store.
+6:44 PM Nimish informed that transform mapping puts into azure blob sstorage.
+6:45 PM Nimish informed that we are not seeeing any activity period.
+6:45 PM IRT informed that transform mapping cloud service has started now.
+6:50 PM David verified about the status and IRT informed there were in busy state.
+6:51 PM IRT informed that transform mapping and merge peak cloud services were up and running.
+6:52 PM IRT updated that we were seeing this error "Failed: Unable to check status of Azure operation: (503) Service Unavailable" in Docat.
+6:54 PM Nimish requested to page Conversion CM team on the call.
+7:01 PM IRT informed that we have restarted through the DOcat.
+7:02 PM David requested IRT to restart the cloud services through azure portal.
+7:04 PM Jaswanth joined the call and NImish informed that Circuit breaker is enabled.
+7:05 PM Jaswanth informed that we observed 02 successfull requests.
+7:06 PM Jawanth informed that Rabbit MQ status looks good.
+7:07 PM Jaswanth updated that we are able to see the traffic in the dashboard queue and requested IRT to hold-on the activity.
+7:09 PM Nimish informed that 02 requests are going through azure.
+7:11 PM Nimish informed that we need blog storage team on the call.
+7:11 PM David informed that CB is enabled and requested to perform hard restart.
+7:12 PM IRT has peforming the restart through azure Cloud service and Jaswanth informed that endpoint looks good.
+7:15 PM IRT has restarted both the cloud serivces in azure portal.
+7:21 PM Jaswanth requested to disable CB and Jawan the informed that traffic is coming into the queue.
+7:21 PM Nimish has disabled the CB. 
+7:22 PM Tamil joined the call and IRT explained the issue.
+7:25 PM Nimish verifeid about the consumer traffic coming through the rabbit MQ.
+7:26 PM Jaswanth informed that Blob connectivity looks good.
+7:27 PM Nimish updated that observing issues that Worker role's not connecting to rabbit MQ.
+7:28 PM IRT verified the health cehck for conversion and status looks good on transform mapping.
+7:32 PM Jaswanth requested to Page Docme team and ESP on the call.
+7:33 PM Nimish informed that issue is still exists even after enabling and disabiling the CB.
+7:35 PM Daniel joined the call.
+7:36 PM Nimish informed that messages not processing from on-premesis to azure.
+7:39 PM Swarup from Docme team joined the call and David explained the issue.
+7:40 PM Mallikharjun from ESP team joined the call.
+7:41 PM Jaswanth shared the "Queue PcnvTransform.Queue in virtual host PROD.policyConversion.vhost" to mallikar.
+7:42 PM Swarup informed that everything looks good and Jawanth requested to verify by logging into the servers.
+7:44 PM Nimish informed that timestamp was changed to UTC and it wont go through 8 PM and TM won't populate in the dashboard upto 8 PM.
+7:46 PM David requested to validate the policies.
+7:47 PM Malli inforemd that we don't see any backlogs on transform mapping.
+7:49 PM Sai Vemula from Client DevOps informed that health check is failing and verifying about to perform app pool recycle.
+7:51 PM Jaswanth informed that messages are filed up on the three servers.
+7:52 PM Nimish verified about the patching activity and Sai informed that there was no patching.
+7:53 PM David informed that queue count is 200 now.
+7:56 PM Sai informed that we are performing app pool recycle on 03 servers.
+7:57 PM Swarup requested Sai to run the script to run at 6 PM.
+8:00 PM Nimish informed that we are the messing queue in azure side.
+8:03 PM Sai informed that we have performed the app pool recycle on 03 servers.
+8:04 PM Jaswanth verified the health check and status looks good.
+8:06 PM Nimish informed that messesages are going through now.
+8:07 PM Sai informed that all the 04 servers looks good.
+8:14 PM Sai informed that messages are not in queue now and the servers are healthy.
+8:15 PM David informed that everything looks good.
+8:16 PM As the issue resolved, Teams decided to close the call.
+8:17 PM NOC call ended.
+
+
+
+
+
+Root cause: health check and MSMQ messages were failing on ON-Premsis 04 servers
+
+Resoltion: ESP team has performed app pool recycle on 03 on-prem servers. After the restart, the messages were going from On-prem to azure.
+
+
+
+IN sent for "MAJOR INCIDENT - NOTIFICATION –PD1 -ARE-Edge Customer-OOPS Page-Error [Closed]"
+
+To : IRT ASD DevOps Incident Notification <irtasddevopsincnotification@geico.com> CCed: David GrossMan.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ASD Updates:
+
+
+1. SUB: PD1 POLDFX - 1 host(s) reporting ASD-PolicyDuckCreek-PD1-[Sev0-Critical]-Service account locked or disabled-V3-CT "
+
+We have cloned the SVC-POL-DkCrk-WP-PD permissions to SVC-PADC-DFX-PD.
+Please validate the access.
+Listener: GZPOLDUKPD1LSR1
+
+2.For all CLEAR - SEV- 0 alerts irrespective of what the runbook says for CAD or ASD, we should page the below teams by default.
+DEVOPS_CLEAR, Devops_Commercial_L2, SQL_Server_Oncall, SQL_Server_PE_Team
+
+3. These alerts have been added to CLEAR-Telematics look up and need to monitor.
+
+CLEAR-Policy-PD1-[Sev0-Critical]-PCIAPI-Voltage Network Connect Error-V2.1
+CLEAR-Policy-PD1-[Sev0-Critical]-Connectivity failure to CTMAPI from PCIAPI-V3-CT
+CLEAR-Policy-PD1-[Sev0-Critical]-Connectivity failure to ASB from PCIAPI-V2.1
+CLEAR-Policy-PD1-[Sev0-Critical]-PCIAPI-Voltage Exception-V2.1
+CLEAR-Policy-PD1-[Sev0-Critical]-PCIAPI-Voltage Authorization Denied-V3-CT
+CLEAR-Policy-PD1-[Sev0-Critical]-PCIAPI-Token Authorization Failures-V3-CT
+
+4. , we will not initiate NOC calls for PD8 environment for CLEAR App. IRT will send an email to CLEAR DevOps if there are any alerts triggered for PD8 environment and requires DevOps attention.
+
+From S1:
+------
+5.Splunk Alert: PD1 - ASD-BAR-PD1-[Sev1-Critical]-CPU Utilization Greater Than 65%-V2.1-B003 - Escalated to Billing L2 - waiting for approval from Rithika to restart.
+
+
+From S3:
+----------
+
+RE: Splunk Alert:  - ASD-ECAMS-PD1-[Sev1-Critical]-Timeout in RestClient-V2.2<< Action Requested>>
+
+
+Reiterating:
+------------
+
+6.SUB: ASD-BAR-TR1-[Sev1-Critical]-Host Not In Started State-V2.1-B005 ACTION REQUESTED
+(The Roles of the cloud service (gze-INSCBI-TR1-cls-INSCBI-001) are not coming up because of the missing DB configurations in the config file for TR1 Environment. Please ignore the alerts for now.
+ 
+
+7. SUB : Primary key constraint violation errors in FASAPI PD1
+
+Alert name: ASD-PEAK-PD1-[Sev0-Critical]-GEICOForms failures-V3.1-CT
+
+ --> when you see >=200 Primary key constraint violation events in 2 mins 
+{Please note that, the instructions provided are only for the Primary Key constraint violations in FASAPI.}
+
+8. CLEAR App Overview And Monitoring Recording - Session by Prudhiv on CLEAR App
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
